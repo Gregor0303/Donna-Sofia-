@@ -1,236 +1,151 @@
 <!DOCTYPE html>
 <html lang="pl">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Donna Sofia – Restauracja włoska w Opolu</title>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet" />
-<style>
-  * {
-    box-sizing: border-box;
-  }
-  body {
-    margin: 0; font-family: 'Poppins', sans-serif; background: #fff8f0; color: #3a1e00;
-  }
-  header {
-    background: url('https://images.unsplash.com/photo-1600891964599-f61ba0e24092?auto=format&fit=crop&w=1400&q=80') center/cover no-repeat;
-    height: 100vh;
-    display: flex; flex-direction: column; justify-content: center; align-items: center;
-    color: white; text-shadow: 0 0 15px #5a2700;
-  }
-  header h1 {
-    font-size: 5rem; margin: 0;
-    animation: fadeInDown 1.5s ease forwards;
-  }
-  header p {
-    font-size: 1.5rem; margin: 10px 0 0;
-    animation: fadeInUp 1.5s ease forwards;
-  }
-  nav {
-    background: #8b0000;
-    padding: 10px 0;
-    display: flex;
-    justify-content: center;
-    gap: 25px;
-  }
-  nav a {
-    color: white;
-    text-decoration: none;
-    font-weight: 600;
-    font-size: 1.1rem;
-    transition: color 0.3s;
-  }
-  nav a:hover {
-    color: #ffb347;
-  }
-  section {
-    max-width: 1100px;
-    margin: 40px auto;
-    padding: 0 20px;
-  }
-  h2 {
-    color: #8b0000;
-    text-align: center;
-    margin-bottom: 30px;
-    font-weight: 700;
-  }
-  .grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(280px,1fr));
-    gap: 25px;
-  }
-  .card {
-    background: white;
-    border-radius: 15px;
-    box-shadow: 0 10px 25px rgba(139,0,0,0.15);
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    transition: transform 0.3s ease;
-  }
-  .card:hover {
-    transform: translateY(-10px);
-  }
-  .card img {
-    width: 100%;
-    height: 180px;
-    object-fit: cover;
-  }
-  .card-content {
-    padding: 20px;
-    flex-grow: 1;
-  }
-  .card-content h3 {
-    margin: 0 0 10px;
-    color: #8b0000;
-  }
-  .card-content p {
-    margin: 0 0 15px;
-    line-height: 1.5;
-    color: #4d2600;
-  }
-  .btn {
-    background: #8b0000;
-    color: white;
-    border: none;
-    padding: 12px 20px;
-    margin: 0 20px 20px;
-    border-radius: 50px;
-    font-weight: 600;
-    cursor: pointer;
-    text-align: center;
-    transition: background-color 0.3s ease;
-    text-decoration: none;
-  }
-  .btn:hover {
-    background: #b33a00;
-  }
-  footer {
-    background: #3a1e00;
-    color: white;
-    text-align: center;
-    padding: 15px 10px;
-    font-size: 0.9rem;
-  }
-  .contact-info {
-    text-align: center;
-    font-size: 1.1rem;
-    line-height: 1.8;
-    margin-bottom: 40px;
-  }
-  .gallery img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-    border-radius: 15px;
-    transition: transform 0.3s ease;
-    cursor: pointer;
-  }
-  .gallery img:hover {
-    transform: scale(1.05);
-  }
-  /* Animacje */
-  @keyframes fadeInDown {
-    from {opacity: 0; transform: translateY(-20px);}
-    to {opacity: 1; transform: translateY(0);}
-  }
-  @keyframes fadeInUp {
-    from {opacity: 0; transform: translateY(20px);}
-    to {opacity: 1; transform: translateY(0);}
-  }
-  /* Responsywność */
-  @media (max-width: 600px) {
-    header h1 {
-      font-size: 3rem;
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Donna Sofia - Najlepsza pizzeria w Opolu</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0; padding: 0;
+      background-color: #fff8f0;
+      color: #333;
     }
-    header p {
+    header {
+      background: #d94f39;
+      color: white;
+      padding: 30px 20px;
+      text-align: center;
+      font-size: 2.5rem;
+      font-weight: bold;
+      letter-spacing: 2px;
+      text-shadow: 1px 1px 2px #800000;
+    }
+    main {
+      max-width: 1000px;
+      margin: 30px auto;
+      padding: 0 20px;
+    }
+    section {
+      margin-bottom: 50px;
+    }
+    h2 {
+      color: #d94f39;
+      margin-bottom: 15px;
+      border-bottom: 3px solid #d94f39;
+      padding-bottom: 5px;
+      font-size: 1.8rem;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+      gap: 15px;
+    }
+    .gallery img {
+      width: 100%;
+      border-radius: 10px;
+      transition: transform 0.3s ease;
+      cursor: pointer;
+      box-shadow: 0 4px 8px rgba(217,79,57,0.3);
+    }
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+    .reviews {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+    .review {
+      background: #fff1eb;
+      border-left: 6px solid #d94f39;
+      padding: 15px 20px;
+      border-radius: 8px;
+      box-shadow: 2px 2px 6px rgba(217,79,57,0.1);
+    }
+    .review .author {
+      font-weight: 700;
       font-size: 1.1rem;
+      margin-bottom: 5px;
+      color: #b0301b;
     }
-  }
-</style>
+    .review .stars {
+      color: #f5a623;
+      margin-bottom: 8px;
+    }
+    .review .text {
+      font-size: 1rem;
+      line-height: 1.4;
+      white-space: pre-line;
+    }
+    footer {
+      text-align: center;
+      padding: 15px;
+      background: #d94f39;
+      color: white;
+      font-size: 0.9rem;
+    }
+    a {
+      color: #b0301b;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
 </head>
 <body>
-
-<header>
-  <h1>Donna Sofia</h1>
-  <p>Autentyczna włoska kuchnia w sercu Opola • ⭐ 4.8 (863 opinie)</p>
-</header>
-
-<nav>
-  <a href="#about">O restauracji</a>
-  <a href="#menu">Menu</a>
-  <a href="#gallery">Galeria</a>
-  <a href="#contact">Kontakt</a>
-</nav>
-
-<section id="about">
-  <h2>O restauracji</h2>
-  <p style="max-width:700px; margin: auto; text-align:center; font-size:1.1rem;">
-    Donna Sofia to jedna z najbardziej cenionych restauracji w Opolu. Nasza specjalność to włoska pizza, świeże owoce morza i domowe desery. Ciepła atmosfera i profesjonalna obsługa sprawiają, że każdy gość czuje się u nas wyjątkowo.
-  </p>
-</section>
-
-<section id="menu">
-  <h2>Popularne dania</h2>
-  <div class="grid">
-    <div class="card">
-      <img src="https://images.unsplash.com/photo-1601924582975-7aa9c3c9f5ed?auto=format&fit=crop&w=600&q=70" alt="Pizza Italiana" />
-      <div class="card-content">
-        <h3>Pizza Italiana</h3>
-        <p>Klasyczna pizza z cienkim ciastem, świeżymi pomidorami, mozzarellą i aromatycznymi ziołami.</p>
-        <a class="btn" href="https://goo.gl/maps/8HpL4J2qv4TH63cV9" target="_blank" rel="noopener">Zobacz w mapach</a>
+  <header>Donna Sofia – Najlepsza pizzeria w Opolu</header>
+  <main>
+    <section>
+      <h2>Nasza Galeria</h2>
+      <div class="gallery">
+        <img src="https://images.unsplash.com/photo-1601924582971-71c15b10a1e2?auto=format&fit=crop&w=800&q=80" alt="Pizza" />
+        <img src="https://images.unsplash.com/photo-1548365328-74320740b16e?auto=format&fit=crop&w=800&q=80" alt="Wnętrze pizzerii" />
+        <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=800&q=80" alt="Hugo Spritz" />
+        <img src="https://images.unsplash.com/photo-1525755662778-989d0524087e?auto=format&fit=crop&w=800&q=80" alt="Danie z burratą" />
       </div>
-    </div>
-    <div class="card">
-      <img src="https://images.unsplash.com/photo-1551218808-94e220e084d2?auto=format&fit=crop&w=600&q=70" alt="Arancini" />
-      <div class="card-content">
-        <h3>Arancini</h3>
-        <p>Złociste kulki ryżowe z serem i mięsem, smażone na chrupiąco — doskonała przystawka.</p>
-        <a class="btn" href="https://goo.gl/maps/8HpL4J2qv4TH63cV9" target="_blank" rel="noopener">Zobacz w mapach</a>
+    </section>
+    <section>
+      <h2>Co mówią nasi klienci?</h2>
+      <div class="reviews">
+        <div class="review">
+          <div class="author">Karol Sz</div>
+          <div class="stars">★★★★★</div>
+          <div class="text">Zdecydowanie jedna z lepszych pizzerii w Opolu! Karta jest długa, pizze bardzo dobrze zrobione. Hugo Spritz rewelacyjny. Obsługa miła i pomocna.</div>
+        </div>
+        <div class="review">
+          <div class="author">Zuzanna Ka</div>
+          <div class="stars">★★★★★</div>
+          <div class="text">Absolutnie przepyszne jedzenie, miła obsługa i super klimat. Z przyjemnością wracam do Donny Sofii. Polecam!</div>
+        </div>
+        <div class="review">
+          <div class="author">M taco</div>
+          <div class="stars">★★★★★</div>
+          <div class="text">Pizza wypiekana w piecu jest znakomita, szczególnie quattro formaggi! Soki bardzo smaczne. Wszystko polecamy!</div>
+        </div>
+        <div class="review">
+          <div class="author">Angelika Wiśniewska</div>
+          <div class="stars">★★★★★</div>
+          <div class="text">Klimatyczne miejsce z pysznym jedzeniem. Najlepszy crème brûlée jaki jadłam, pizza z burratą wyśmienita. Na pewno wrócimy!</div>
+        </div>
+        <div class="review">
+          <div class="author">Wojciech Pospolita</div>
+          <div class="stars">★★★★★</div>
+          <div class="text">Fantastyczne miejsce. Krokiety były niesamowicie smaczne, stworzyłem nawet poemat na ich cześć. Gratuluję całemu zespołowi!</div>
+        </div>
       </div>
-    </div>
-    <div class="card">
-      <img src="https://images.unsplash.com/photo-1600891964799-2342d953b034?auto=format&fit=crop&w=600&q=70" alt="Gnocchi z mulami" />
-      <div class="card-content">
-        <h3>Gnocchi z mulami</h3>
-        <p>Delikatne kluski ziemniaczane z aromatycznym sosem i świeżymi mulami.</p>
-        <a class="btn" href="https://goo.gl/maps/8HpL4J2qv4TH63cV9" target="_blank" rel="noopener">Zobacz w mapach</a>
-      </div>
-    </div>
-    <div class="card">
-      <img src="https://images.unsplash.com/photo-1553621042-f6e147245754?auto=format&fit=crop&w=600&q=70" alt="Krewetki z burratą" />
-      <div class="card-content">
-        <h3>Krewetki z burratą</h3>
-        <p>Krewetki królewskie z delikatnym serem burrata i świeżymi ziołami.</p>
-        <a class="btn" href="https://goo.gl/maps/8HpL4J2qv4TH63cV9" target="_blank" rel="noopener">Zobacz w mapach</a>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section id="gallery">
-  <h2>Galeria</h2>
-  <div class="grid gallery" style="max-width:900px; margin:auto; gap:15px;">
-    <img src="https://images.unsplash.com/photo-1548365328-9f547fb0953d?auto=format&fit=crop&w=600&q=70" alt="Wnętrze restauracji" />
-    <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=600&q=70" alt="Pizza na stole" />
-    <img src="https://images.unsplash.com/photo-1490645935967-10de6ba17061?auto=format&fit=crop&w=600&q=70" alt="Deser" />
-  </div>
-</section>
-
-<section id="contact">
-  <h2>Kontakt</h2>
-  <div class="contact-info">
-    <p><strong>Adres:</strong> Oleska 51b, 45-222 Opole</p>
-    <p><strong>Telefon:</strong> <a href="tel:+48774130309" style="color:#8b0000; font-weight:700;">77 413 03 09</a></p>
-    <p><strong>Godziny otwarcia:</strong> 12:00 – zamknięcie</p>
-    <p><strong>Cena za osobę:</strong> 40–60 zł</p>
-    <p><strong>Lokalizacja na mapie:</strong> <a href="https://goo.gl/maps/8HpL4J2qv4TH63cV9" target="_blank" rel="noopener" style="color:#8b0000; font-weight:700;">Zobacz na Google Maps</a></p>
-  </div>
-</section>
-
-<footer>
-  © 2026 Donna Sofia – Wszystkie prawa zastrzeżone
-</footer>
-
+    </section>
+    <section>
+      <h2>Odwiedź nas</h2>
+      <p>📍 <a href="https://goo.gl/maps/your-pizzeria-location" target="_blank" rel="noopener noreferrer">ul. Przykładowa 12, Opole</a></p>
+      <p>📞 <a href="tel:+48712345678">+48 712 345 678</a></p>
+      <p>🌐 <a href="https://www.donnasofia.pl" target="_blank" rel="noopener noreferrer">www.donnasofia.pl</a></p>
+      <p>📧 <a href="mailto:kontakt@donnasofia.pl">kontakt@donnasofia.pl</a></p>
+    </section>
+  </main>
+  <footer>
+    &copy; 2026 Donna Sofia – Wszystkie prawa zastrzeżone
+  </footer>
 </body>
 </html>
